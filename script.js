@@ -6,7 +6,7 @@ function calcula(){
     let total = (dist.value/media.value)*preco.value
 
     let result = document.getElementById("total");
-    result.textContent = `Total: R$ ${total.toFixed(2)}`;
+    result.innerHTML = `Total: R$ ${total.toFixed(2)}`;
 
 
 

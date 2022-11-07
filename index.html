@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <header>
-            <img src="./car-gif-transparent-4.png" alt="carro andando" width="350vw">
+            <img src="./car-red-design.png" alt="carro andando">
             <h1>...Calculadora de Combustível</h1>
         </header>
         <main>
@@ -19,16 +19,16 @@
                 <h1>Bora para o Cálculo:</h1>
 
                 <label for="dist">distância em km:</label>
-                <input type="text" id="dist" placeholder="km"></p>
+                <input type="number" id="dist" placeholder="km"></p>
 
                 <label for="preco">preço do combustível:</label>
-                <input type="text" id="preco" placeholder="R$"></p>
+                <input type="number" id="preco" placeholder="R$"></p>
 
                 <label for="media">média do carro:</label>
-                <input type="text" id="media" placeholder="km/l"></p>
+                <input type="number" id="media" placeholder="km/l"></p>
 
                 <button id="btn-calc" onclick="calcula()">Calcular</button><br><br>
-                <strong>Total:</strong>
+                <strong id="total">Total:</strong>
                 
             </section>
             <section id="mapa">

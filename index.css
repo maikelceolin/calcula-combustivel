@@ -17,9 +17,11 @@ body {
     flex-direction: column;
     margin: auto;
     align-items: center;
+    justify-content: flex-start;
 }
 
 header{
+    margin-top: 25px;
     display: flex;
     width: 50vw;
     justify-content: space-between;
@@ -27,13 +29,15 @@ header{
 }
 
 header img {
-    height: 25vh;
+    height: 10vmax;
 }
 
 main {
     display: flex;
-    margin-top: auto;
+    margin-inline: 8vmax;
+    margin-top: 0px;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 100px;
     background-color: rgb(163, 234, 236);
     width: fit-content;
@@ -43,12 +47,19 @@ main {
 }
 
 #quadro input {
-    width:80px;
+    width:100px;
     font-size: large;
     color: rgb(156, 0, 161);
     border-radius: 10px;
     text-align: center;
     border-style: none;
+    -moz-appearance: textfield;
+}
+
+#mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #mapa input {
@@ -87,9 +98,9 @@ main {
 }
 
 .container article {
-    width: 50vw;
+    width: 70vw;
     text-align: justify;
-    margin-top: 2em;
+    margin-top: 40px;
 }
 
 .container article span{
@@ -97,12 +108,13 @@ main {
     font-weight: bold;
 }
 
-
-h1 {
+header h1 {
+    width: 60vmax;
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 5px;
-    font-size: 2rem;
     font-weight: bold;
+
 }
 
 h2 {
