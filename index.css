@@ -39,13 +39,62 @@ main {
     width: fit-content;
     padding: 20px;
     border-radius: 1em;
+    box-shadow: 0.2em 0.2em rgb(109, 64, 103);
 }
 
-main input::placeholder {
-    font-family: 'Indie Flower', cursive;
+#quadro input {
+    width:80px;
+    font-size: large;
+    color: rgb(156, 0, 161);
+    border-radius: 10px;
+    text-align: center;
+    border-style: none;
+}
+
+#mapa input {
+    width:300px;
+    font-size: large;
+    color: rgb(156, 0, 161);
+    border-radius: 10px;
+    border-style: none;
+    padding-left: 2%;
+}
+
+
+#quadro input::placeholder {
+    color: rgb(220, 146, 223);  
+}
+
+#mapa input::placeholder {
+    color: rgb(220, 146, 223);  
+}
+
+#btn-calc {
+    width:100px;
+    font-size: large;
+    background-color:rgb(156, 0, 161) ;
+    color: yellow;
+    border-radius: 30px;
+    text-align: center;
+    border-style: none;
+    padding:10px;
+    cursor: pointer;
+    margin-left: 85%;
+}
+
+#btn-maps {
+    cursor: pointer;
+}
+
+.container article {
+    width: 50vw;
+    text-align: justify;
+    margin-top: 2em;
+}
+
+.container article span{
+    color: blue;
     font-weight: bold;
-    color:black;
-    height: fit-content;
 }
 
 

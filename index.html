@@ -11,30 +11,60 @@
 <body>
     <div class="container">
         <header>
-            <img src="./car-driving-7.gif" alt="carro andando" height="120vh">
+            <img src="./car-gif-transparent-4.png" alt="carro andando" width="350vw">
             <h1>...Calculadora de Combustível</h1>
         </header>
         <main>
             <section id="quadro">
                 <h1>Bora para o Cálculo:</h1>
-                <p>distância em km:<br><input type="text" id="dist"></p>
-                <p>Preço do litro da gasosa ou alcolis:<br><input type="text" id="preco"></p>
-                <p>Média do possante km/litro<br><input type="text" id="media"></p>
-                <p><button id="btn-calc" onclick="calcula()">Calcular</button></p>
-                <p id="total"><strong>Total:</strong></p>
+
+                <label for="dist">distância em km:</label>
+                <input type="text" id="dist" placeholder="km"></p>
+
+                <label for="preco">preço do combustível:</label>
+                <input type="text" id="preco" placeholder="R$"></p>
+
+                <label for="media">média do carro:</label>
+                <input type="text" id="media" placeholder="km/l"></p>
+
+                <button id="btn-calc" onclick="calcula()">Calcular</button><br><br>
+                <strong>Total:</strong>
                 
             </section>
             <section id="mapa">
                 <h1>Vish... Não sei a distância</h1>
                 <h2>Joga ai no Google Maps!<br> Depois volta aqui ein</h2>
                 <form action="//www.google.com/maps" id="">
-                    <p>Local de Saída:<br><input aria-label="From Location" id="" name="saddr" type="text"></p>
-                    <p>Local de Chegada:<br><input aria-label="To Location" id="" name="daddr" type="text"></p>
-                    <p><input type="submit" value="Ver rota no Google Maps"></p>
+
+                    <p>Local de Saída:<br>
+                    <input aria-label="From Location" id="" name="saddr" type="text" placeholder="ex. Curitiba"></p>
+
+                    <p>Local de Chegada:<br>
+                    <input aria-label="To Location" id="" name="daddr" type="text" placeholder="ex. Av. Paulista"></p>
+                    
+                    <p><input id="btn-maps" type="submit" value="Ver rota no Google Maps"></p>
                     
                 </form>
             </section>
         </main>
+        <article>
+            <span>Como posso calcular a média do meu carro?</span><br><br>
+            1. Encha seu tanque com o combustível que usa e zere a kilometragem no painel;<br><br>
+            
+            2. Ande com o carro pelo menos até o tanque estiver na metade; <br><br>
+
+            3. Vá ao posto e peça para encher o tanque novamente, e anote quanto 
+            de combustível coube em seu tanque. Essa é a quantidade em litros de combustível que
+            você usou desde quando zerou o painel; <br><br>
+            
+            4. Anote quantos kilometros estão marcando no seu painel. 
+            Essa é a distância que você percorreu desde quando
+            zerou o painel;<br><br>
+
+            5. Divida o valor da distancia pela quantidade de litros e você terá a média de consumo do seu carro<br><br>
+        </article>
+
+        <div>anuncio</div>
     </div>
     
 </body>
