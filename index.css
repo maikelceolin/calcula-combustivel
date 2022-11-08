@@ -76,12 +76,16 @@ main {
     color: rgb(220, 146, 223);  
 }
 
+#quadro strong {
+    font-size: 2rem;
+}
+
 #mapa input::placeholder {
     color: rgb(220, 146, 223);  
 }
 
 #btn-calc {
-    width:100px;
+    width:fit-content;
     font-size: large;
     background-color:rgb(156, 0, 161) ;
     color: yellow;
@@ -90,7 +94,7 @@ main {
     border-style: none;
     padding:10px;
     cursor: pointer;
-    margin-left: 85%;
+    margin-left: 20vmax;
 }
 
 #btn-maps {
@@ -127,3 +131,8 @@ h2 {
 p {
     margin: 15px;
 }
+
+@media (max-width:1000px) {
+    header {
+        flex-direction: column;
+    }
